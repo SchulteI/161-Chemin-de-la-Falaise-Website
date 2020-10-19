@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+		<title>Contact</title>
+		<meta name="keywords" content=""/>
+		<meta name="description" content=""/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all"/>
+		<link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div id="web-heading">
+			<a href="index.html"><img src="images/background.jpg" width="100%" height=675px></a>
+		</div>
+		<div id="nav">
+			<div class="nav-header">
+				<div class="nav-title">
+					<div id="loger">
+					</div>
+				</div>
+			</div>
+			<div class="nav-btn">
+				<label for="nav-check">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+			</div>
+			<input type="checkbox" id="nav-check">
+			<div class="nav-links">
+				<a href="index.html">About</a>
+				<a href="amenities.html">Amenities</a>
+				<a href="calender.html">Calendar and Booking</a>
+				<a href="tour.html">Video Tour</a>
+				<div class="dropdown">
+					<button class="dropbtn"><a href="tremblant.html" style="color:white">Mont-Tremblant</a>
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="tremblant.html">Events at Mont-Tremblant</a>
+						<a href="map.html">About the Area</a>
+					</div>
+				</div>
+				<a href="review.html">Reviews</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+
+		<div class="contents">
+			<div id="wrapper_index">
+				<div id="page" class="container">
+					<div id="content">
+						<div class="title">
+							<h1>Contact Us</h1>
+							<span class="seperator" style="width:100%"></span>
+						</div>
+					</div>
+						<section class="section2 clearfix">
+							<div class="col2 column1 first">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.5446604141694!2d-74.61986567692496!3d46.19961908028861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccf9d90437d01df%3A0xfa78c6dcd84c1173!2s161+Chemin+de+la+Falaise%2C+Mont-Tremblant%2C+QC!5e0!3m2!1sen!2sca!4v1548299945153"
+										width="600" height="540" frameborder="0" style="border:0; float:left;" allowfullscreen></iframe>
+							</div>
+							<div class="col2 column2 last">
+								<div class="sec2innercont">
+									<div class="sec2addr">
+										<p><span class="collig">Current listing price :</span> $135 per night.</p>
+										<br>
+										<p><span class="collig">Phone :</span> (613) 697-5918</p>
+										<br>
+										<p><span class="collig">Email :</span> paulthao.schulte@gmail.com</p>
+										<br>
+										<p><span class="collig">Air BNB listing :</span> <form action="https://www.airbnb.ca/rooms/28696655?location=161%20Chemin%20de%20la%20Falaise%2C%20Mont%20Tremblant%2C%20QC%2C%20Canada&adults=2&guests=1&toddlers=0&check_in=2019-06-05&check_out=2019-06-15">
+											<input type="image" src="images/airbnb.jpg" width="200px" height="100px" value="go to airbnb">
+										</form>
+									</div>
+								</div>
+
+							</div>
+						</section>
+
+					</div>
+
+				</div>
+
+				<div id="copyright" class="container">
+					<p><b> 161 Chemin de la Falaise, QC </b></p>
+				</div>
+			</div>
+			<script>
+				window.onscroll = function () {
+					myFunction()
+				};
+				var navbar = document.getElementById("nav");
+				var sticky = navbar.offsetTop;
+				var w = window.innerWidth
+					|| document.documentElement.clientWidth
+					|| document.body.clientWidth;
+				function myFunction() {
+					if (w > 1010) {
+						if (window.pageYOffset >= sticky) {
+							navbar.classList.add("navstick");
+						} else {
+							navbar.classList.remove("navstick");
+						}
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>

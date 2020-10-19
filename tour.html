@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+		<title>Tour</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all"/>
+		<link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
+	</head>
+	<body>
+
+		<div id="web-heading">
+			<a href="index.html"><img src="images/background.jpg" width="100%" height=675px></a>
+		</div>
+
+
+    <div id="nav">
+      <div class="nav-header">
+        <div class="nav-title">
+          <div id="loger">
+          </div>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="amenities.html">Amenities</a>
+        <a href="calender.html">Calendar and Booking</a>
+        <a href="tour.html">Video Tour</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="tremblant.html" style="color:white">Mont-Tremblant</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="tremblant.html">Events at Mont-Tremblant</a>
+            <a href="map.html">About the Area</a>
+          </div>
+        </div>
+        <a href="review.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+		<div class="contents">
+
+
+			<div id="wrapper_calendar">
+				<div id="page" class="container">
+					<div id="content">
+						<div class="title">
+
+
+							<h1>Video Tour</h1>
+							<span class="seperator" style="width:100%"></span>
+              <br><center>
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/nBWrM0E7kws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</center>	<span class="seperator" style="width:100%"></span>
+          <br></div>
+  					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+		<script>
+			window.onscroll = function () {
+				myFunction()
+			};
+			var navbar = document.getElementById("nav");
+			var sticky = navbar.offsetTop;
+			var w = window.innerWidth
+				|| document.documentElement.clientWidth
+				|| document.body.clientWidth;
+			function myFunction() {
+				if (w > 1010) {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("navstick");
+					} else {
+						navbar.classList.remove("navstick");
+					}
+				}
+			}
+		</script>
+		<div id="copyright" class="container">
+			<p><b> 161 Chemin de la Falaise, QC </b>
+		</div>
+	</body>
+</html>

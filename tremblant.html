@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+		<title>Tremblant</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all"/>
+		<link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
+	</head>
+	<body>
+
+		<div id="web-heading">
+			<a href="index.html"><img src="images/background.jpg" width="100%" height=675px></a>
+		</div>
+
+
+    <div id="nav">
+      <div class="nav-header">
+        <div class="nav-title">
+          <div id="loger">
+          </div>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="amenities.html">Amenities</a>
+        <a href="calender.html">Calendar and Booking</a>
+        <a href="tour.html">Video Tour</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="tremblant.html" style="color:white">Mont-Tremblant</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="tremblant.html">Events at Mont-Tremblant</a>
+            <a href="map.html">About the Area</a>
+          </div>
+        </div>
+        <a href="review.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+		<div class="contents">
+
+
+			<div id="wrapper_calendar">
+				<div id="page" class="container">
+					<div id="content">
+						<div class="title">
+
+
+							<h1>Upcoming Events at Mont-Tremblant</h1>
+							<span class="seperator" style="width:100%"></span>
+						</div>
+            <h3 class="sec2frmtitle">Mont-Tremblant has new events almost every weekend for the whole family to participate in.<br> Here are the two next upcoming events!</h3>
+            <span class="seperator" style="width:100%"></span>
+						<p>
+							<br>
+							<p>
+               <h2>Elevation</h2><br>
+               <h3>Jan. 31,2019-Feb. 3,2019</h3><br>
+               <center><img src="images/elevation.jpg" alt="Elevation"></center><br>
+               -From January 31 to February 3, Tremblant hosts Elevation, a new LGBTQ event. Get ready to ski and snowboard all day and enjoy lively apres-ski and festive evenings with renowned DJs.
+               <span class="seperator" style="width:100%"></span>
+               <br>
+               <h2>Freestyle Air Nation</h2><br>
+               <h3>Feb. 2,2019-Feb. 3,2019</h3><br>
+               <center><img src="images/snowparks.jpg" alt="Snowpark"></center><br>
+               -Following in the foot steps of last year’s success, Freestyle Air Nation presented by Burton and Mazda is back at Tremblant for a second year. It’s a great opportunity to come watch and cheer on Canada’s top Slopestyle athletes who will be competing for the Air Nation Tour champion title. Athletes will compete on a course composed of three rails and two jumps in a best of two format for qualifications and finals. Fans will have access to view the competition in designated areas. An event not to be missed and to add at your winter schedule!
+               <span class="seperator" style="width:100%"></span>
+               <br>
+  					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+		<script>
+			window.onscroll = function () {
+				myFunction()
+			};
+			var navbar = document.getElementById("nav");
+			var sticky = navbar.offsetTop;
+			var w = window.innerWidth
+				|| document.documentElement.clientWidth
+				|| document.body.clientWidth;
+			function myFunction() {
+				if (w > 1010) {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("navstick");
+					} else {
+						navbar.classList.remove("navstick");
+					}
+				}
+			}
+		</script>
+		<div id="copyright" class="container">
+			<p><b> 161 Chemin de la Falaise, QC </b>
+		</div>
+	</body>
+</html>
